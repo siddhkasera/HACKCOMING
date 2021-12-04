@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel ="stylesheet" href="buyer.css">
+    </head>
+    <body>
+        <div class="container">
+            <form class="form " id ="buyer_login" >
+                <h1 class="form_title">Login</h1>
+                <div class="form_message form_message_error"></div>
+                <div class="form_input_group">
+                    <input type="text" class="form_input" autofocus placeholder = "Username or email" label = "username" method ="get" action="contact.php">
+                    <div class="form_input_error_message"></div>
+                </div>
+
+                <div class="form_input_group">
+                    <input type="text" class="form_input form_input_error" label = "password"autofocus placeholder = "Password" method ="get" action="contact.php">
+                    <div class="form_input_error_message"></div>
+                </div>
+                <button class="form_button" type = submit> Continue</button>
+                <p class="form__text">
+                    <a href="#" class="form__link">Forgot your password?</a>
+                </p>
+                <p class="form__text">
+                    <a href="./" class="form__link" id="linkCreateAcct">Dont have an account? Make an account</a>
+                </p>
+            </form>
+            
+            <form class="form  form_hidden" id ="createAcct">
+                <h1 class="form_title">Create Account</h1>
+                <div class="form_message form_message_error"></div>
+                <div class="form_input_group">
+                    <input type="text" id = "signupUsername" class="form_input" autofocus placeholder = "Username">
+                    <div class="form_input_error_message"></div>
+                </div>
+                <div class="form_input_group">
+                    <input type="text" class="form_input" autofocus placeholder = "Email Address">
+                    <div class="form_input_error_message"></div>
+                </div>
+                <div class="form_input_group">
+                    <input type="text" class="form_input form_input_error" autofocus placeholder = "Password">
+                    <div class="form_input_error_message"></div>
+                </div>
+                <div class="form_input_group">
+                    <input type="text" class="form_input form_input_error" autofocus placeholder = "Confirm Password">
+                    <div class="form_input_error_message"></div>
+                </div>
+                <button class="form_button" type = submit> Continue</button>
+               
+                <p class="form__text">
+                    <a href="./" class="form__link" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+            </form>
+        </div>
+        <script src="buyer.js"></script>
+    </body>
+</html>
